@@ -90,8 +90,8 @@ public class Finestra extends JFrame
 		// Metodo per cambiare l'immagine del pannello
 		public void disegna(Color[][] immagine) 
 		{
-			for (int i = 0; i < getHeight(); i++)
-				for (int j = 0; j < getWidth(); j++)
+			for (int i = 0; i < buffered_image.getHeight(); i++)
+				for (int j = 0; j < buffered_image.getWidth(); j++)
 					buffered_image.setRGB(j, i, immagine[i][j].getRGB());
 
 			// Richiede al pannello di ridisegnarsi
